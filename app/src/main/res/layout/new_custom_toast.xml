@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="350dp"
+    android:layout_gravity="center"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_blackBox"
+        android:layout_width="295dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center"
+        android:background="@drawable/wanning_bg"
+
+        >
+
+
+<!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="11dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/textView7"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView9" />-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toastMsg"
+            android:textStyle=""
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:gravity="top"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</FrameLayout>

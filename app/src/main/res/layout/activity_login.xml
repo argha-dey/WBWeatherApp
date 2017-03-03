@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sv_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+       >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_logoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dip"
+        android:src="@drawable/logo_small"
+        />
+
+    <TextView
+        android:id="@+id/tv_headerTextLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Disaster Management"
+        android:layout_below="@+id/iv_logoLogin"
+        android:layout_marginTop="15dip"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tv_headerTagLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_headerTextLogin"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal"
+        android:text="Government of West Bengal"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_headerTagLogin"
+        android:layout_centerHorizontal="true"
+        android:hint="Username"
+        android:layout_marginTop="40dip"
+        android:background="@drawable/text_background"
+        android:ems="18"
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:textColorHint="#dddddd" />
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/et_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/text_background"
+        android:ems="18"
+        android:inputType="textPassword"
+        android:hint="Password"
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:textColorHint="#dddddd" />
+
+    <LinearLayout
+
+        android:id="@+id/linearayout_remember"
+        android:layout_below="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="32dp"
+        android:paddingRight="40dp" >
+
+        <CheckBox
+            android:id="@+id/chkbx_rememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left"
+
+            android:padding="5dp"
+            android:text="Remember Me"
+            android:textColor="#dddddd"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_signUpHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|right"
+
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:textColor="#f3c71d"
+                android:textSize="7pt" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_below="@+id/linearayout_remember"
+        android:id="@+id/btn_signIn"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/reset_button_shape"
+android:layout_centerHorizontal="true"
+        android:onClick="onSignInClicked"
+        android:padding="10dp"
+        android:shadowColor="#dd000000"
+        android:ems="18"
+        android:text="SIGN IN"
+        android:textColor="#ffffff" />
+    <Button
+        android:layout_below="@+id/btn_signIn"
+        android:id="@+id/btn_cancel"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:onClick="onCancelClicked"
+        android:background="@drawable/orange_btn_selector"
+    android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:shadowColor="#dd000000"
+        android:ems="18"
+
+        android:text="CANCEL"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+    android:layout_margin="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_cancel"
+        android:layout_centerInParent="true"
+
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered by "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#606c8a" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cyber-SWIFT   "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#606c8a" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version-1.2 "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#606c8a"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>
+       </ScrollView>

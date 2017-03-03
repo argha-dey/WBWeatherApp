@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+<RelativeLayout
+    android:id="@+id/llHeader"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+
+    android:background="#f4f4f4"
+    android:orientation="horizontal"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:text="Disaster Weather App"
+    android:gravity="center"
+    android:paddingLeft="10dp"
+    android:textSize="20dp"/>
+
+
+    <ImageButton
+        android:id="@+id/btn_click"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/header_button"
+        android:scaleType="fitCenter"
+        android:padding="5dp"
+        android:shadowColor="#dd000000"
+        android:shadowDx="-1"
+        android:shadowDy="-1"
+        android:onClick="clickOnOptionButton"
+        android:clickable="true"
+        android:shadowRadius="2"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+</RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000"/>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="95"
+        android:padding="10dp"
+        android:layout_marginTop="2dp"
+
+        android:background="#eaebed">
+
+
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+            <Button android:id="@+id/bt_daily_rain_gauge_information"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:textColor="#fff"
+                android:text="DAILY RAIN GAUGE  INFORMATION"
+                android:background="#d23735"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <Button  android:id="@+id/bt_daily_river_gauge_information"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:text="DAILY RIVER GAUGE INFOEMATION"
+                android:textColor="#fff"
+                android:background="#84ac11"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <Button
+                android:id="@+id/bt_daily_flood_report"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:text="DAILY FLOOD REPORT"
+                android:textColor="#fff"
+                android:background="#e28b07"
+                />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:text="INACTIVE"
+                android:background="#8c8e86"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:text="INACTIVE"
+                android:background="#8c8e86"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:text="INACTIVE"
+                android:background="#8c8e86"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+</LinearLayout>
+
+
+</ScrollView>
+    <RelativeLayout
+        android:id="@+id/rl_footer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="#3540cc">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Powered by "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cyber-SWIFT"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    </LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96999696">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#f9151515"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="2dp"
+            android:background="@drawable/divider" />
+
+        <TextView
+            android:id="@+id/tv_change_password"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:minWidth="75dp"
+            android:text="Change Password"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="2dp"
+            android:background="@drawable/divider" />
+
+        <TextView
+            android:id="@+id/tv_sync"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:minWidth="75dp"
+            android:text="Sync Data"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="2dp"
+            android:background="@drawable/divider" />
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:minWidth="75dp"
+            android:text="Logout"
+            android:textAllCaps="false"
+
+            android:textColor="#ffffff" />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="2dp"
+            android:background="@drawable/divider" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:minWidth="75dp"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+</RelativeLayout>

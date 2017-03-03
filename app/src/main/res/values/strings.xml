@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="phone_digits">0123456789</string>
+    <string name="digits">0123456789.</string>
+    <string name="no_internet">No network connection found! Please check your network connection.</string>
+    <string name="response_timeout">Response time out error! Please check your internet connection and try again.</string>
+    <string name="auth_failure">Server authentication failed! Please try again.</string>
+    <string name="server_error">Server isn\'t responding! Please try again.</string>
+    <string name="network_error">Network not found! Please check your internet connection and try again.</string>
+    <string name="parse_error">Unable to parse Data! Please try again.</string>
+    <string name="offline_storage">Network connection is weak!\nData has been saved in offline mode.\nPlease use "OFFLINE DATA SYNC" button at the "ACTION PAGE" to upload the data when network connection is available.</string>
+    <string name="credentials_missmatch">Your present credentials do not match with your last login credentials!\nPlease enter proper credentials.</string>
+    <string name="offline_download">Are you sure you want to download all the school data?\nThis may take several minutes depending on your network strength.</string>
+    <string name="option_one">PROJECT STATUS</string>
+    <string name="option_two">PROJECT STAGES</string>
+    <string name="option_three">OFFLINE DATA SYNC</string>
+    <string name="option_four">FULL DATA SYNC</string>
+    <string name="text_done">Save</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="btn_take_photo">Take Photo</string>
+</resources>

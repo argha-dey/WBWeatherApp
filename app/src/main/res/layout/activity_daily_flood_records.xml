@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <RelativeLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="#f4f4f4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="25dp"
+            android:text="Daily Flood Report"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="#000"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="10dp"
+
+
+        >
+        <!--android:background="@color/color_scroll"-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="River Basin "
+                android:textStyle="bold|italic" />
+
+            <RelativeLayout
+                android:id="@+id/rl_dam_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp">
+
+                <com.cyberswift.weatherapp.dropdown.DropDownViewForXML
+                    android:id="@+id/dropdown_flood_river_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/dropdown_bggg"
+                    android:gravity="center_vertical|left"
+                    android:hint="Select"
+                    android:paddingLeft="5dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff">
+
+                </com.cyberswift.weatherapp.dropdown.DropDownViewForXML>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/down_arrow" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Name of Reservoir "
+                android:textStyle="bold|italic" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_river"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp">
+
+
+                <com.cyberswift.weatherapp.dropdown.DropDownViewForXML
+                    android:id="@+id/dropdown_flood_reservoir_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/dropdown_bggg"
+                    android:gravity="center_vertical|left"
+                    android:hint="Select"
+                    android:paddingLeft="5dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff">
+
+                </com.cyberswift.weatherapp.dropdown.DropDownViewForXML>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/down_arrow" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Conservation/Pond Level(ft.)"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/et_conservation_level"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/dropdown_bggg"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical|right"
+                android:hint=""
+                android:inputType="numberDecimal"
+                android:paddingRight="6dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Maximum Flood Level(ft.)"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/et_max_flood"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/dropdown_bggg"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical|right"
+                android:hint=""
+                android:inputType="numberDecimal"
+                android:paddingRight="6dp"
+                android:singleLine="true"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Present Reservoir Level(ft.) "
+                android:textStyle="bold|italic" />
+
+            <EditText
+
+                android:id="@+id/et_present_reservoir_level"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/dropdown_bggg"
+                android:gravity="center_vertical|right"
+                android:hint=""
+                android:inputType="numberDecimal"
+                android:paddingRight="6dp"
+                android:singleLine="true"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="INFLOW(cusecs)"
+                android:textStyle="bold|italic" />
+
+            <EditText
+
+                android:id="@+id/et_inflow"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/dropdown_bggg"
+                android:gravity="center_vertical|right"
+                android:hint=""
+                android:inputType="numberDecimal"
+                android:paddingRight="6dp"
+
+                android:singleLine="true"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="River Discharge(cusecs) "
+                android:textStyle="bold|italic" />
+
+            <EditText
+
+                android:id="@+id/et_river_discharge"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/dropdown_bggg"
+                android:gravity="center_vertical|right"
+                android:hint=""
+                android:inputType="numberDecimal"
+                android:paddingRight="6dp"
+                android:singleLine="true"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Time"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/et_flood_time"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/dropdown_bggg"
+                android:focusable="true"
+                android:gravity="center_vertical|left"
+                android:hint=""
+                android:inputType="time"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="14dp" />
+
+
+            <!--
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:singleLine="true"
+                        android:text="Jurisdiction of Divn"
+                        android:textStyle="bold|italic" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true">
+
+                        <cyberswift.com.weatherapp.dropdown.DropDownViewForXML
+                            android:id="@+id/dropdown_jurisdiction_division"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/border_dropdawn"
+
+                            android:padding="0dp"
+
+
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/down_arrow" />
+
+                    </RelativeLayout>
+            -->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:singleLine="true"
+                android:text="Remarks "
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/et_flood_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/dropdown_bggg"
+                android:gravity="top"
+                android:hint="Enter your comments here."
+                android:inputType="textMultiLine"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:singleLine="true"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:weightSum="2.1">
+
+                <Button
+                    android:id="@+id/btn_flood_reset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/reset_button_shape"
+                    android:padding="12dp"
+                    android:text="Reset"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+
+                <Button
+                    android:id="@+id/btn_flood_submit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/submit_btn_selector"
+                    android:padding="12dp"
+                    android:text="submit"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
